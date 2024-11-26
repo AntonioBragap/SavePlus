@@ -1,0 +1,4 @@
+# Ignorar arquivos temporários do Word 
+*.tmp ~$
+*.docx ~$
+*.doc
