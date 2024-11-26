@@ -1,47 +1,75 @@
-/*CComentários/
+/* Comentários */
 
-/*Container de conteúdo do body*/
-
+/* Container de conteúdo do body */
 .container {
-  /*Ajustes para receber cabeçalho e rodapé*/
+  /* Ajustes para receber cabeçalho e rodapé */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /*Fim do ajuste do Header e Footer*/
-  text-align: center; /*Alinhamento do texto*/
+  /* Fim do ajuste do Header e Footer */
+  text-align: center; /* Alinhamento do texto */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /*Fonte geral do site*/
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /* Fonte geral do site */
+  font-size: 1.5em;
 }
 
-/*Edições do cabeçalho*/
+/* Edições do cabeçalho */
 .header {
-  /*Ajustes da borda do cabealho*/
+  /* Ajustes da borda do cabeçalho */
   border: 2px solid blue;
-  border-radius: 4px; /*Curvatura da borda */
-  margin: 10px; /*Distância da margem da borda*/
-  padding: 8px; /*Distância do conteúdo do cabeçalho pra margem*/
+  border-radius: 4px; /* Curvatura da borda */
+  margin: 10px; /* Distância da margem da borda */
+  padding: 8px; /* Distância do conteúdo do cabeçalho pra margem */
 }
 
-/*Conteúdo central*/
-
+/* Conteúdo central */
 .container .content {
-  /*Código base para organizar footer e header do site*/
+  /* Código base para organizar footer e header do site */
   flex: 1 1 0;
   background-color: transparent;
   border: 0;
-  /*Fim do ajuste do Header e Footer*/
-  /*Ajustes da borda do cabealho*/
+  /* Fim do ajuste do Header e Footer */
+  /* Ajustes da borda do cabeçalho */
   border: 2px solid blue;
-  border-radius: 4px; /*Curvatura da borda */
-  margin: 10px; /*Distância da margem da borda*/
-  padding: 8px; /*Distância do conteúdo do cabeçalho pra margem*/
+  border-radius: 4px; /* Curvatura da borda */
+  margin: 10px; /* Distância da margem da borda */
+  padding: 8px; /* Distância do conteúdo do cabeçalho pra margem */
 }
 
-/*Edições do crodapé*/
+/* Edições do rodapé */
 .footer {
-  /*Ajustes da borda do cabealho*/
+  /* Ajustes da borda do rodapé */
   border: 2px solid blue;
-  border-radius: 4px; /*Curvatura da borda */
-  margin: 10px; /*Distância da margem da borda*/
-  padding: 8px; /*Distância do conteúdo do cabeçalho pra margem*/
+  border-radius: 4px; /* Curvatura da borda */
+  margin: 10px; /* Distância da margem da borda */
+  padding: 8px; /* Distância do conteúdo do rodapé pra margem */
+  background-color: #f1f1f1; /* Cor de fundo do rodapé */
+}
+
+/* Estilização da logo no rodapé */
+#logo-rodape {
+  width: 150px; /* Largura da logo */
+  margin-bottom: 10px; /* Espaçamento abaixo da logo */
+}
+
+/* Estilização do texto no rodapé */
+.footer p {
+  margin: 10px 0; /* Espaçamento vertical do texto */
+  font-size: 14px; /* Tamanho da fonte do texto */
+}
+
+/* Estilização do botão "Voltar ao Topo" */
+#voltar-topo {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remover borda padrão do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 14px; /* Tamanho da fonte do botão */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  border-radius: 5px; /* Curvatura dos cantos do botão */
+}
+
+/* Estilização ao passar o mouse sobre o botão */
+#voltar-topo:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
 }

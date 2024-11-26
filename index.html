@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- Comentários-->
+<!-- Cabeçalho do Documento HTML -->
 
 <head>
     <meta charset="UTF-8">
@@ -11,12 +11,32 @@
 </head>
 
 <body class="container">
-    <!-- Cabeçalho-->
+    <!-- Cabeçalho -->
     <header class="header">Header</header>
-    <!-- Conteúdo Principal-->
+
+    <!-- Conteúdo Principal -->
     <main class="content"> CONTENT</main>
-    <!-- Rodapé-->
-    <footer class="footer"> Footer </footer>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <!-- Adiciona a logo do IFAM CMZL ao rodapé -->
+        <img src="logo_ifam_cmzl.png" alt="Logo IFAM CMZL" id="logo-rodape">
+        <!-- Informações dos alunos e da professora -->
+        <p> Desenvolvido por: <br>
+            Antonio Prudente, Luana Aguiar e Matheus Lima<br>
+            Estudantes do Curso de Engenharia de Software<br>
+            Docente: Gizele Uchoa
+        </p>
+        <!-- Botão "Voltar ao Topo" -->
+        <button id="voltar-topo">Voltar ao Topo</button>
+    </footer>
+
+    <!-- Script para o botão "Voltar ao Topo" -->
+    <script>
+        document.getElementById('voltar-topo').onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
