@@ -1,4 +1,2 @@
 # Ignorar arquivos temporários do Word 
-*.tmp ~$
-*.docx ~$
-*.doc
+~WRL1987.tmp
