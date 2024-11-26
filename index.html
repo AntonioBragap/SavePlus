@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuardianZL</title>
     <link rel="stylesheet" href="/resource/css/style.css">
+    <script defer src="/resource/JS/scripts.js"></script> <!-- Inclui o arquivo JavaScript -->
 </head>
 
 <body class="container">
@@ -15,28 +16,70 @@
     <header class="header">Header</header>
 
     <!-- Conteúdo Principal -->
-    <main class="content"> CONTENT</main>
+    <main class="content">
+        <!-- Funcionalidade 1: Ver os Horários dos Medicamentos Cadastrados -->
+        <div class="feature">
+            <img src="medication_schedule_icon.png" alt="Horários dos Medicamentos" class="icon">
+            <h2>Horários dos Medicamentos</h2>
+            <button onclick="viewMedications()">
+                <img src="view_icon.png" alt="Ver Horários" class="button-icon"> <!-- Ícone do botão -->
+            </button>
+        </div>
+
+        <!-- Funcionalidade 2: Cadastrar Medicamentos -->
+        <div class="feature">
+            <img src="add_medication_icon.png" alt="Cadastrar Medicamentos" class="icon">
+            <h2>Cadastrar Medicamentos</h2>
+            <button onclick="addMedication()">
+                <img src="add_icon.png" alt="Cadastrar" class="button-icon"> <!-- Ícone do botão -->
+            </button>
+        </div>
+
+        <!-- Funcionalidade 3: Anotar Pressão Arterial e Batimento Cardíaco -->
+        <div class="feature">
+            <img src="blood_pressure_icon.png" alt="Anotar Pressão Arterial" class="icon">
+            <h2>Anotar Pressão Arterial</h2>
+            <button onclick="logBloodPressure()">
+                <img src="log_icon.png" alt="Anotar" class="button-icon"> <!-- Ícone do botão -->
+            </button>
+        </div>
+
+        <!-- Botão de Emergência -->
+        <div class="feature">
+            <img src="emergency_icon.png" alt="Emergência" class="icon">
+            <h2>Emergência</h2>
+            <button onclick="sendEmergency()">
+                <img src="emergency_icon.png" alt="Emergência" class="button-icon"> <!-- Ícone do botão -->
+            </button>
+        </div>
+        <!-- Formulário para Cadastrar Contato de Emergência -->
+        <section class="emergency-contact">
+            <h2>Contato de Emergência</h2>
+            <form id="emergency-contact-form">
+                <label for="emergency-number">Número de Telefone:</label>
+                <input type="tel" id="emergency-number" name="emergency-number" required>
+                <button type="submit">Salvar Contato</button>
+            </form>
+        </section>
+    </main>
+
+
 
     <!-- Rodapé -->
     <footer class="footer">
-        <!-- Adiciona a logo do IFAM CMZL ao rodapé -->
-        <img src="logo_ifam_cmzl.png" alt="Logo IFAM CMZL" id="logo-rodape">
-        <!-- Informações dos alunos e da professora -->
-        <p> Desenvolvido por: <br>
-            Antonio Prudente, Luana Aguiar e Matheus Lima<br>
-            Estudantes do Curso de Engenharia de Software<br>
-            Docente: Gizele Uchoa
-        </p>
+        <div class="footer-content">
+            <!-- Adiciona a logo do IFAM CMZL ao rodapé -->
+            <img src="/resource/img/LogoIFAMRodape.png" alt="Logo IFAM CMZL" id="logo-rodape">
+            <!-- Informações dos alunos e da professora -->
+            <p>
+                Antonio Prudente, Luana Aguiar, Matheus Lima<br>
+                Estudantes do Curso de Engenharia de Software<br>
+                Alunos da professora: Gizele Uchoa
+            </p>
+        </div>
         <!-- Botão "Voltar ao Topo" -->
         <button id="voltar-topo">Voltar ao Topo</button>
     </footer>
-
-    <!-- Script para o botão "Voltar ao Topo" -->
-    <script>
-        document.getElementById('voltar-topo').onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
 </body>
 
 </html>
